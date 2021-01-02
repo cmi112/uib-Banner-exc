@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.container {
+  background-color: #fecfbe;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 12%; */
+  /* border: 1px solid; */
+
+  width: 100%;
+}
+.card-title {
+  color: #202082;
+  width: 60%;
+  /* justify-self: start; */
+  align-self: flex-start;
+  margin: 10px;
+}
+img {
+  width: 40px;
+  animation-name: checkmark;
+  animation-duration: 0.3s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+.card-body {
+  display: flex;
+  /* gap: 80px; */
+  background-color: #fca889;
+  width: 100%;
+  text-align: start;
+  padding: 40px 20px;
+  justify-content: flex-start;
+  align-items: center;
+  animation-name: cardbody;
+  animation-duration: 0.3s;
+  animation-delay: 1s;
+}
+.main-title {
+  animation-name: title;
+  animation-duration: 0.4s;
+}
+span {
+  display: block;
+  /* margin-left: 30px; */
+  color: #030202;
+}
+.num {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #ff4400;
+  margin-right: 20px;
+}
+/* .spans {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+} */
+.card-btn {
+  background-color: #ff7f50;
+  width: 100%;
+  padding: 10px;
+  animation-name: cardbtn;
+  animation-duration: 0.4s;
+  animation-delay: 2s;
+}
+button {
+  background-color: #202082;
+  padding: 10px 30px;
+  margin: 20px;
+  color: white;
+  border-radius: 30px;
+  margin-left: 0;
+  animation-name: btn;
+  animation-duration: 0.3s;
+  animation-delay: 2s;
+}
+/* Animations */
+@keyframes checkmark {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes title {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(300px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes cardbody {
+  0% {
+    transform: translateY(-300px);
+  }
+  25% {
+    /* transform: translateY(-300px); */
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes cardbtn {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes btn {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
